@@ -8,5 +8,5 @@ RUN pip install "paddleocr>=2.0.1"
 
 COPY ./paddleocr.sh /scripts/
 
-ENTRYPOINT ["/scripts/paddleocr.sh"]
+ENTRYPOINT ["/bin/bash", "/scripts/paddleocr.sh"]
 
